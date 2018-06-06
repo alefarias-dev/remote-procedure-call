@@ -1,6 +1,5 @@
 # REMOTE PROCEDURE CALL
 
----
 Artigo: [ainda a ser criado].
 
 Repositório para desenvolvimento de algoritmos e testes para
@@ -11,7 +10,6 @@ Implementações de RPC a serem utilizadas:
 - [gRPC](https://grpc.io/)
 - [RPyC](https://rpyc.readthedocs.io/en/latest/)
 
----
 
 # Funcionamento básico de uma RPC
 
@@ -27,4 +25,14 @@ um retorno que é devolvido ao procedimento cliente como uma chamada de método 
 
 ![sistema distribuido](https://cdn-images-1.medium.com/max/1600/1*OfNSKsKWP59AI4OfFjo-HA.jpeg)
 
-Fonte: [Medium](https://medium.com/@akashg/remote-procedure-calls-with-go-1b85eb93b491)
+Figura 1: modelo de chamada de procedimento remoto. Fonte:[Medium](https://medium.com/@akashg/remote-procedure-calls-with-go-1b85eb93b491)
+
+
+# Referências Bibliográficas
+
+- [Overview of Remote Procedure Calls](http://www.cs.wustl.edu/~schmidt/PDF/rpc4.pdf)
+- [On Remote Procedure Call](http://www.inf.puc-rio.br/~noemi/sd-09/rpc-survey.pdf)
+- [A critique of the remote procedure call paradigm](http://dare.ubvu.vu.nl/bitstream/handle/1871/2592/11014.pdf?sequence=1)
+- [Building distributed systems with remote procedure call](https://ieeexplore.ieee.org/document/4807901/)
+- [Remote procedure call protocols for real-time systems](https://ieeexplore.ieee.org/document/144109/)
+- [Fault tolerant remote procedure call](https://ieeexplore.ieee.org/document/12499/)
