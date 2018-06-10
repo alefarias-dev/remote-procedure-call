@@ -36,3 +36,7 @@ Figura 1: modelo de chamada de procedimento remoto. Fonte:[Medium](https://mediu
 - [Building distributed systems with remote procedure call](https://ieeexplore.ieee.org/document/4807901/)
 - [Remote procedure call protocols for real-time systems](https://ieeexplore.ieee.org/document/144109/)
 - [Fault tolerant remote procedure call](https://ieeexplore.ieee.org/document/12499/)
+
+# Virtualenv
+
+O ambiente virtual utilizado pode ser acessado e baixado [aqui](/virtualenv).

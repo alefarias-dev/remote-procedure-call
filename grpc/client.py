@@ -32,7 +32,6 @@ def run():
     vector2 = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
     dist = stub.euclideanDistance(server_pb2.EuclidianVectors(vectors=[vector1,vector2]))  # euclidian distance
     print('euclidian distance calculated by the server: {}'.format(dist.num))
-
     print('client finished...')
 
 
