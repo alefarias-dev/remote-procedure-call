@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/grpc/client.py" line="27" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/grpc/client.py" line="26" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="753f6701-9f86-4325-bfa5-3e936af79caf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/grpc/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grpc/server.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grpc/server.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grpc/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/grpc/client.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -46,8 +43,8 @@
       <file leaf-file-name="client.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/grpc/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+            <state relative-caret-position="222">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -412,7 +409,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528655982608" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528656123993" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -436,7 +433,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528655982609" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1528656123994" />
       </method>
     </configuration>
   </component>
@@ -452,7 +449,7 @@
       <updated>1528252430540</updated>
       <workItem from="1528252432318" duration="1691000" />
       <workItem from="1528640435790" duration="6245000" />
-      <workItem from="1528651633948" duration="4325000" />
+      <workItem from="1528651633948" duration="4477000" />
     </task>
     <task id="LOCAL-00001" summary="inicialização README">
       <created>1528253215596</created>
@@ -465,7 +462,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12261000" />
+    <option name="totallyTimeSpent" value="12413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -645,8 +642,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/grpc/client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="32" column="62" selection-start-line="32" selection-start-column="62" selection-end-line="32" selection-end-column="62" />
+        <state relative-caret-position="222">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>

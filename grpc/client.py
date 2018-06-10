@@ -18,7 +18,6 @@ def run():
     stringList = ['Alexandre', 'Farias', 'Santos']
     numbers = [1,2,3,4,5,6,7,8,9]
     float_numbers = [0.13, 0.72, 0.35, 0.43, 0.52]
-    vectors = [[1,2,3],[4,5,6]]
 
     stub.voidFunction(server_pb2.void())  # void function
     stub.intArg(server_pb2.Integer(integer=10))  # int arg
@@ -33,9 +32,7 @@ def run():
     vector2 = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
     stub.euclideanDistance(server_pb2.EuclidianVectors(vectors=[vector1,vector2]))  # euclidian distance
 
-
-    print('client finished')
-
+    print('client finished...')
 
 
 if __name__ == '__main__':
