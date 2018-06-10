@@ -9,34 +9,35 @@ import numpy as np
 class ServerServicer(server_pb2_grpc.ServerServicer):
 
     def voidFunction(self, request, context):
+        # print('server received call for void')
         return server_pb2.void()
 
     def intArg(self, request, context):
-        print('server received {} [{}]'.format(type(request), request.integer))
+        # print('server received {} [{}]'.format(type(request), request.integer))
         return server_pb2.void()
 
     def longArg(self, request, context):
-        print('server received {} [{}]'.format(type(request), request.longValue))
+        # print('server received {} [{}]'.format(type(request), request.longValue))
         return server_pb2.void()
 
     def stringArg(self, request, context):
-        print('server received {} [{}]'.format(type(request), request.text))
+        # print('server received {} [{}]'.format(type(request), request.text))
         return server_pb2.void()
 
     def objectArg(self, request, context):
-        print('server received {} [{}]'.format(type(request), request))
+        # print('server received {} [{}]'.format(type(request), request))
         return server_pb2.Object()
 
     def stringListArg(self, request, context):
-        print('server received {} {}'.format(type(request), request.texts))
+        # print('server received {} {}'.format(type(request), request.texts))
         return server_pb2.void()
 
     def intArray(self, request, context):
-        print('server received {} {}'.format(type(request), request.numbers))
+        # print('server received {} {}'.format(type(request), request.numbers))
         return server_pb2.void()
 
     def floatArray(self, request, context):
-        print('server received {} {}'.format(type(request), request.numbers))
+        # print('server received {} {}'.format(type(request), request.numbers))
         return server_pb2.void()
 
     def euclideanDistance(self, request, context):
