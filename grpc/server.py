@@ -3,6 +3,7 @@ import server_pb2
 import server_pb2_grpc
 import grpc
 import time
+import numpy as np
 
 
 class ServerServicer(server_pb2_grpc.ServerServicer):
@@ -39,8 +40,10 @@ class ServerServicer(server_pb2_grpc.ServerServicer):
         return server_pb2.void()
 
     def euclideanDistance(self, request, context):
-        print(request)
-        return server_pb2.Float(num=.1)
+        v = np.array(list(request.vectors[0].numbers));
+        w = np.array(list(request.vectors[1].numbers));
+        res = np.sqrt(np.sum((v-w))**2)
+        return server_pb2.Float(num=float(res))
 
 
 def serve():
