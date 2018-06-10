@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+service Server {
+    rpc voidFunction(void) returns (void) {};
+    rpc intArg(Integer) returns (void) {};
+    rpc longArg(Long) returns (void) {};
+    rpc stringArg(String) returns (String) {};
+    rpc objectArg(Object) returns (Object) {};
+    rpc stringListArg(StringArray) returns (void) {};
+    rpc intArray(IntArray) returns (void) {};
+    rpc floatArray(FloatArray) returns (void) {};
+    rpc euclideanDistance(EuclidianVectors) returns (Float) {};
+}
+
+message void {
+
+}
+
+message Float {
+    float num = 1;
+}
+
+message Integer {
+    int32 integer = 1;
+}
+
+message Long {
+    int64 longValue = 1;
+}
+
+message String {
+    string text = 1;
+}
+
+message Object {
+    string name = 1;
+    int32 age = 2;
+    float weight = 3;
+}
+
+message StringArray {
+    repeated string texts = 1000;
+}
+
+message IntArray {
+    repeated int32 numbers = 1000;
+}
+
+message FloatArray {
+    repeated float numbers = 1000;
+}
+
+message EuclidianVectors {
+    repeated FloatArray vectors = 2;
+}
