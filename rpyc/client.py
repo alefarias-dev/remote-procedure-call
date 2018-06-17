@@ -1,6 +1,4 @@
-import server_pb2
-import server_pb2_grpc
-import grpc
+import rpyc
 import time
 import numpy as np
 import pandas as pd
@@ -17,77 +15,77 @@ class Object:
 def run():
 
     host = input("Host: ")
-    channel = grpc.insecure_channel(host+':50051')
-    stub = server_pb2_grpc.ServerStub(channel)
+    c = rpyc.connect(host, 18861)
 
     # auxiliar data structures
     n_tests       = 1024
     stringList    = ['abcd' for i in range(200)]
     numbers       = [32 for i in range(200)]
     float_numbers = [2.5 for i in range(200)]
-    vector1       = server_pb2.FloatArray(numbers=[15.63,1.65,0.69])
-    vector2       = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
+    vector1       = [15.63,1.65,0.69]
+    vector2       = [15.10,1.25,0.89]
+
 
     void_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.voidFunction(server_pb2.void())  # void function
+        c.root.voidFunction()  # void function
         e = time.time()
         void_times.append(e-s)
 
     int_arg_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.intArg(server_pb2.Integer(integer=10))  # int arg
+        c.root.intArg(10)  # int arg
         e = time.time()
         int_arg_times.append(e-s)
 
     long_arg_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.longArg(server_pb2.Long(longValue=665656565656565))  # long arg
+        c.root.longArg(665656565656565)  # long arg
         e = time.time()
         long_arg_times.append(e-s)
 
     string_arg_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.stringArg(server_pb2.String(text="This is Sparta!!!"))  # string arg
+        c.root.stringArg("This is Sparta!!!")  # string arg
         e = time.time()
         string_arg_times.append(e-s)
 
     string_array_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.stringListArg(server_pb2.StringArray(texts=stringList))  # string array
+        c.root.stringListArg(stringList)  # string array
         e = time.time()
         string_array_times.append(e-s)
 
     int_array_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.intArray(server_pb2.IntArray(numbers=numbers))  # int array
+        c.root.intArray(numbers)  # int array
         e = time.time()
         int_array_times.append(e-s)
 
     float_array_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.floatArray(server_pb2.FloatArray(numbers=float_numbers))  # float array
+        c.root.floatArray(float_numbers)  # float array
         e = time.time()
         float_array_times.append(e-s)
 
     object_arg_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.objectArg(server_pb2.Object(name='alexandre', age=10, weight=72.5))  # passing object
+        c.root.objectArg(Object(name='alexandre', age=10, weight=72.5))  # passing object
         e = time.time()
         object_arg_times.append(e-s)
 
     euclidian_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.euclideanDistance(server_pb2.EuclidianVectors(vectors=[vector1,vector2]))  # euclidian distance
+        c.root.euclideanDistance(vector1,vector2)  # euclidian distance
         e = time.time()
         euclidian_times.append(e-s)
 
@@ -120,7 +118,7 @@ def run():
                        'string_array':string_array_times,
                        'object_arg':object_arg_times,
                        'euclidean_arg':euclidian_times})
-    df.to_csv('grpc_metrics_'+host+'.csv', index=False)
+    df.to_csv('rpyc_metrics_'+host+'.csv', index=False)
     print('client finished...')
 
 
