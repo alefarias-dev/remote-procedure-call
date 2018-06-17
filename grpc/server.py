@@ -14,31 +14,31 @@ class ServerServicer(server_pb2_grpc.ServerServicer):
 
     def intArg(self, request, context):
         # print('server received {} [{}]'.format(type(request), request.integer))
-        return server_pb2.void()
+        return server_pb2.Integer(integer=request.integer)
 
     def longArg(self, request, context):
         # print('server received {} [{}]'.format(type(request), request.longValue))
-        return server_pb2.void()
+        return server_pb2.Long(longValue=request.longValue)
 
     def stringArg(self, request, context):
         # print('server received {} [{}]'.format(type(request), request.text))
-        return server_pb2.void()
+        return server_pb2.String(text=request.text)
 
     def objectArg(self, request, context):
         # print('server received {} [{}]'.format(type(request), request))
-        return server_pb2.Object()
+        return server_pb2.Object(name=request.name, age=request.age, weight=request.weight)
 
     def stringListArg(self, request, context):
         # print('server received {} {}'.format(type(request), request.texts))
-        return server_pb2.void()
+        return server_pb2.StringArray(texts=request.texts)
 
     def intArray(self, request, context):
         # print('server received {} {}'.format(type(request), request.numbers))
-        return server_pb2.void()
+        return server_pb2.IntArray(numbers=request.numbers)
 
     def floatArray(self, request, context):
         # print('server received {} {}'.format(type(request), request.numbers))
-        return server_pb2.void()
+        return server_pb2.FloatArray(numbers=request.numbers)
 
     def euclideanDistance(self, request, context):
         v = np.array(list(request.vectors[0].numbers));

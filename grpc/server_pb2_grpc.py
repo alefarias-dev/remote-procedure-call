@@ -22,12 +22,12 @@ class ServerStub(object):
     self.intArg = channel.unary_unary(
         '/Server/intArg',
         request_serializer=server__pb2.Integer.SerializeToString,
-        response_deserializer=server__pb2.void.FromString,
+        response_deserializer=server__pb2.Integer.FromString,
         )
     self.longArg = channel.unary_unary(
         '/Server/longArg',
         request_serializer=server__pb2.Long.SerializeToString,
-        response_deserializer=server__pb2.void.FromString,
+        response_deserializer=server__pb2.Long.FromString,
         )
     self.stringArg = channel.unary_unary(
         '/Server/stringArg',
@@ -42,17 +42,17 @@ class ServerStub(object):
     self.stringListArg = channel.unary_unary(
         '/Server/stringListArg',
         request_serializer=server__pb2.StringArray.SerializeToString,
-        response_deserializer=server__pb2.void.FromString,
+        response_deserializer=server__pb2.StringArray.FromString,
         )
     self.intArray = channel.unary_unary(
         '/Server/intArray',
         request_serializer=server__pb2.IntArray.SerializeToString,
-        response_deserializer=server__pb2.void.FromString,
+        response_deserializer=server__pb2.IntArray.FromString,
         )
     self.floatArray = channel.unary_unary(
         '/Server/floatArray',
         request_serializer=server__pb2.FloatArray.SerializeToString,
-        response_deserializer=server__pb2.void.FromString,
+        response_deserializer=server__pb2.FloatArray.FromString,
         )
     self.euclideanDistance = channel.unary_unary(
         '/Server/euclideanDistance',
@@ -139,12 +139,12 @@ def add_ServerServicer_to_server(servicer, server):
       'intArg': grpc.unary_unary_rpc_method_handler(
           servicer.intArg,
           request_deserializer=server__pb2.Integer.FromString,
-          response_serializer=server__pb2.void.SerializeToString,
+          response_serializer=server__pb2.Integer.SerializeToString,
       ),
       'longArg': grpc.unary_unary_rpc_method_handler(
           servicer.longArg,
           request_deserializer=server__pb2.Long.FromString,
-          response_serializer=server__pb2.void.SerializeToString,
+          response_serializer=server__pb2.Long.SerializeToString,
       ),
       'stringArg': grpc.unary_unary_rpc_method_handler(
           servicer.stringArg,
@@ -159,17 +159,17 @@ def add_ServerServicer_to_server(servicer, server):
       'stringListArg': grpc.unary_unary_rpc_method_handler(
           servicer.stringListArg,
           request_deserializer=server__pb2.StringArray.FromString,
-          response_serializer=server__pb2.void.SerializeToString,
+          response_serializer=server__pb2.StringArray.SerializeToString,
       ),
       'intArray': grpc.unary_unary_rpc_method_handler(
           servicer.intArray,
           request_deserializer=server__pb2.IntArray.FromString,
-          response_serializer=server__pb2.void.SerializeToString,
+          response_serializer=server__pb2.IntArray.SerializeToString,
       ),
       'floatArray': grpc.unary_unary_rpc_method_handler(
           servicer.floatArray,
           request_deserializer=server__pb2.FloatArray.FromString,
-          response_serializer=server__pb2.void.SerializeToString,
+          response_serializer=server__pb2.FloatArray.SerializeToString,
       ),
       'euclideanDistance': grpc.unary_unary_rpc_method_handler(
           servicer.euclideanDistance,

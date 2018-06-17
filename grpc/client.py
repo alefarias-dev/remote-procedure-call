@@ -20,13 +20,13 @@ def run():
     stub = server_pb2_grpc.ServerStub(channel)
 
     # auxiliar data structures
-    stringList = ['This', 'is', 'My', 'String']
-    numbers = [1,2,3,4,5,6,7,8,9]
-    float_numbers = [0.13, 0.72, 0.35, 0.43, 0.52]
+    stringList = ['abcd' for i in range(200)]
+    numbers = [32 for i in range(200)]
+    float_numbers = [2.5 for i in range(200)]
     vector1 = server_pb2.FloatArray(numbers=[15.63,1.65,0.69])
     vector2 = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
 
-    n_tests = 200
+    n_tests = 1024
 
     void_times = []
     for i in range(n_tests):
@@ -95,8 +95,8 @@ def run():
     int_arg_times      = np.array(int_arg_times)
     long_arg_times     = np.array(long_arg_times)
     string_arg_times   = np.array(string_arg_times)
-    int_array_times    = np.array(void_times)
-    float_array_times  = np.array(void_times)
+    int_array_times    = np.array(int_array_times)
+    float_array_times  = np.array(float_array_times)
     string_array_times = np.array(string_array_times)
     object_arg_times   = np.array(object_arg_times)
     euclidian_times    = np.array(euclidian_times)

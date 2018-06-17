@@ -2,13 +2,13 @@ syntax = "proto3";
 
 service Server {
     rpc voidFunction(void) returns (void) {};
-    rpc intArg(Integer) returns (void) {};
-    rpc longArg(Long) returns (void) {};
+    rpc intArg(Integer) returns (Integer) {};
+    rpc longArg(Long) returns (Long) {};
     rpc stringArg(String) returns (String) {};
     rpc objectArg(Object) returns (Object) {};
-    rpc stringListArg(StringArray) returns (void) {};
-    rpc intArray(IntArray) returns (void) {};
-    rpc floatArray(FloatArray) returns (void) {};
+    rpc stringListArg(StringArray) returns (StringArray) {};
+    rpc intArray(IntArray) returns (IntArray) {};
+    rpc floatArray(FloatArray) returns (FloatArray) {};
     rpc euclideanDistance(EuclidianVectors) returns (Float) {};
 }
 
@@ -39,17 +39,17 @@ message Object {
 }
 
 message StringArray {
-    repeated string texts = 1000;
+    repeated string texts = 1;
 }
 
 message IntArray {
-    repeated int32 numbers = 1000;
+    repeated int32 numbers = 1;
 }
 
 message FloatArray {
-    repeated float numbers = 1000;
+    repeated float numbers = 1;
 }
 
 message EuclidianVectors {
-    repeated FloatArray vectors = 2;
+    repeated FloatArray vectors = 1;
 }
