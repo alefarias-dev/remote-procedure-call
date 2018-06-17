@@ -423,7 +423,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257081216" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257536388" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -447,7 +447,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257081217" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257536389" />
       </method>
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -485,7 +485,7 @@
       <workItem from="1528651633948" duration="10660000" />
       <workItem from="1528667971869" duration="472000" />
       <workItem from="1529252853557" duration="751000" />
-      <workItem from="1529253636535" duration="3441000" />
+      <workItem from="1529253636535" duration="3846000" />
     </task>
     <task id="LOCAL-00001" summary="inicialização README">
       <created>1528253215596</created>
@@ -498,7 +498,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23260000" />
+    <option name="totallyTimeSpent" value="23665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="7" />
