@@ -5,10 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/README.md" line="41" mnemonic="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="753f6701-9f86-4325-bfa5-3e936af79caf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpyc/rpyc_metrics_localhost.csv" beforeDir="false" afterPath="$PROJECT_DIR$/rpyc/rpyc_metrics_localhost.csv" afterDir="false" />
-    </list>
+    <list default="true" id="753f6701-9f86-4325-bfa5-3e936af79caf" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/grpc/server.proto">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -34,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/rpyc/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -46,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/rpyc/client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1815">
-              <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+              <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -58,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/grpc/client.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1800">
-              <caret line="120" column="53" lean-forward="true" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
+              <caret line="120" column="53" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -110,7 +107,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="y" value="27" />
     <option name="width" value="673" />
@@ -423,7 +420,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257536388" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529258522388" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -447,7 +444,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529257536389" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1529258522389" />
       </method>
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -485,7 +482,7 @@
       <workItem from="1528651633948" duration="10660000" />
       <workItem from="1528667971869" duration="472000" />
       <workItem from="1529252853557" duration="751000" />
-      <workItem from="1529253636535" duration="3846000" />
+      <workItem from="1529253636535" duration="4040000" />
     </task>
     <task id="LOCAL-00001" summary="inicialização README">
       <created>1528253215596</created>
@@ -498,11 +495,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23665000" />
+    <option name="totallyTimeSpent" value="23859000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -756,7 +752,7 @@
     <entry file="file://$PROJECT_DIR$/grpc/server.proto">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -780,7 +776,7 @@
     <entry file="file://$PROJECT_DIR$/grpc/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
-          <caret line="120" column="53" lean-forward="true" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
+          <caret line="120" column="53" selection-start-line="120" selection-start-column="53" selection-end-line="120" selection-end-column="53" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
@@ -790,7 +786,7 @@
     <entry file="file://$PROJECT_DIR$/rpyc/client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1815">
-          <caret line="121" column="31" lean-forward="true" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -800,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/rpyc/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
