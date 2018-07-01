@@ -12,6 +12,10 @@ class ServerServicer(server_pb2_grpc.ServerServicer):
         # print('server received call for void')
         return server_pb2.void()
 
+    def boolFunction(self, request, context):
+        # print('server received call for void')
+        return server_pb2.Bool(boolean=request.boolean)
+
     def intArg(self, request, context):
         # print('server received {} [{}]'.format(type(request), request.integer))
         return server_pb2.Integer(integer=request.integer)

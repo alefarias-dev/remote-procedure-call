@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='server.proto',
   package='',
   syntax='proto3',
-  serialized_pb=_b('\n\x0cserver.proto\"\x06\n\x04void\"\x14\n\x05\x46loat\x12\x0b\n\x03num\x18\x01 \x01(\x02\"\x1a\n\x07Integer\x12\x0f\n\x07integer\x18\x01 \x01(\x05\"\x19\n\x04Long\x12\x11\n\tlongValue\x18\x01 \x01(\x03\"\x16\n\x06String\x12\x0c\n\x04text\x18\x01 \x01(\t\"3\n\x06Object\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03\x61ge\x18\x02 \x01(\x05\x12\x0e\n\x06weight\x18\x03 \x01(\x02\"\x1c\n\x0bStringArray\x12\r\n\x05texts\x18\x01 \x03(\t\"\x1b\n\x08IntArray\x12\x0f\n\x07numbers\x18\x01 \x03(\x05\"\x1d\n\nFloatArray\x12\x0f\n\x07numbers\x18\x01 \x03(\x02\"0\n\x10\x45uclidianVectors\x12\x1c\n\x07vectors\x18\x01 \x03(\x0b\x32\x0b.FloatArray2\xd4\x02\n\x06Server\x12\x1e\n\x0cvoidFunction\x12\x05.void\x1a\x05.void\"\x00\x12\x1e\n\x06intArg\x12\x08.Integer\x1a\x08.Integer\"\x00\x12\x19\n\x07longArg\x12\x05.Long\x1a\x05.Long\"\x00\x12\x1f\n\tstringArg\x12\x07.String\x1a\x07.String\"\x00\x12\x1f\n\tobjectArg\x12\x07.Object\x1a\x07.Object\"\x00\x12-\n\rstringListArg\x12\x0c.StringArray\x1a\x0c.StringArray\"\x00\x12\"\n\x08intArray\x12\t.IntArray\x1a\t.IntArray\"\x00\x12(\n\nfloatArray\x12\x0b.FloatArray\x1a\x0b.FloatArray\"\x00\x12\x30\n\x11\x65uclideanDistance\x12\x11.EuclidianVectors\x1a\x06.Float\"\x00\x62\x06proto3')
+  serialized_pb=_b('\n\x0cserver.proto\"\x06\n\x04void\"\x17\n\x04\x42ool\x12\x0f\n\x07\x62oolean\x18\x01 \x01(\x08\"\x14\n\x05\x46loat\x12\x0b\n\x03num\x18\x01 \x01(\x02\"\x1a\n\x07Integer\x12\x0f\n\x07integer\x18\x01 \x01(\x05\"\x19\n\x04Long\x12\x11\n\tlongValue\x18\x01 \x01(\x03\"\x16\n\x06String\x12\x0c\n\x04text\x18\x01 \x01(\t\"3\n\x06Object\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x0b\n\x03\x61ge\x18\x02 \x01(\x05\x12\x0e\n\x06weight\x18\x03 \x01(\x02\"\x1c\n\x0bStringArray\x12\r\n\x05texts\x18\x01 \x03(\t\"\x1b\n\x08IntArray\x12\x0f\n\x07numbers\x18\x01 \x03(\x05\"\x1d\n\nFloatArray\x12\x0f\n\x07numbers\x18\x01 \x03(\x02\"0\n\x10\x45uclidianVectors\x12\x1c\n\x07vectors\x18\x01 \x03(\x0b\x32\x0b.FloatArray2\xf4\x02\n\x06Server\x12\x1e\n\x0cvoidFunction\x12\x05.void\x1a\x05.void\"\x00\x12\x1e\n\x0c\x62oolFunction\x12\x05.Bool\x1a\x05.Bool\"\x00\x12\x1e\n\x06intArg\x12\x08.Integer\x1a\x08.Integer\"\x00\x12\x19\n\x07longArg\x12\x05.Long\x1a\x05.Long\"\x00\x12\x1f\n\tstringArg\x12\x07.String\x1a\x07.String\"\x00\x12\x1f\n\tobjectArg\x12\x07.Object\x1a\x07.Object\"\x00\x12-\n\rstringListArg\x12\x0c.StringArray\x1a\x0c.StringArray\"\x00\x12\"\n\x08intArray\x12\t.IntArray\x1a\t.IntArray\"\x00\x12(\n\nfloatArray\x12\x0b.FloatArray\x1a\x0b.FloatArray\"\x00\x12\x30\n\x11\x65uclideanDistance\x12\x11.EuclidianVectors\x1a\x06.Float\"\x00\x62\x06proto3')
 )
 
 
@@ -49,6 +49,37 @@ _VOID = _descriptor.Descriptor(
 )
 
 
+_BOOL = _descriptor.Descriptor(
+  name='Bool',
+  full_name='Bool',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='boolean', full_name='Bool.boolean', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=24,
+  serialized_end=47,
+)
+
+
 _FLOAT = _descriptor.Descriptor(
   name='Float',
   full_name='Float',
@@ -75,8 +106,8 @@ _FLOAT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=24,
-  serialized_end=44,
+  serialized_start=49,
+  serialized_end=69,
 )
 
 
@@ -106,8 +137,8 @@ _INTEGER = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=46,
-  serialized_end=72,
+  serialized_start=71,
+  serialized_end=97,
 )
 
 
@@ -137,8 +168,8 @@ _LONG = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=74,
-  serialized_end=99,
+  serialized_start=99,
+  serialized_end=124,
 )
 
 
@@ -168,8 +199,8 @@ _STRING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=101,
-  serialized_end=123,
+  serialized_start=126,
+  serialized_end=148,
 )
 
 
@@ -213,8 +244,8 @@ _OBJECT = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=125,
-  serialized_end=176,
+  serialized_start=150,
+  serialized_end=201,
 )
 
 
@@ -244,8 +275,8 @@ _STRINGARRAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=178,
-  serialized_end=206,
+  serialized_start=203,
+  serialized_end=231,
 )
 
 
@@ -275,8 +306,8 @@ _INTARRAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=208,
-  serialized_end=235,
+  serialized_start=233,
+  serialized_end=260,
 )
 
 
@@ -306,8 +337,8 @@ _FLOATARRAY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=237,
-  serialized_end=266,
+  serialized_start=262,
+  serialized_end=291,
 )
 
 
@@ -337,12 +368,13 @@ _EUCLIDIANVECTORS = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=268,
-  serialized_end=316,
+  serialized_start=293,
+  serialized_end=341,
 )
 
 _EUCLIDIANVECTORS.fields_by_name['vectors'].message_type = _FLOATARRAY
 DESCRIPTOR.message_types_by_name['void'] = _VOID
+DESCRIPTOR.message_types_by_name['Bool'] = _BOOL
 DESCRIPTOR.message_types_by_name['Float'] = _FLOAT
 DESCRIPTOR.message_types_by_name['Integer'] = _INTEGER
 DESCRIPTOR.message_types_by_name['Long'] = _LONG
@@ -360,6 +392,13 @@ void = _reflection.GeneratedProtocolMessageType('void', (_message.Message,), dic
   # @@protoc_insertion_point(class_scope:void)
   ))
 _sym_db.RegisterMessage(void)
+
+Bool = _reflection.GeneratedProtocolMessageType('Bool', (_message.Message,), dict(
+  DESCRIPTOR = _BOOL,
+  __module__ = 'server_pb2'
+  # @@protoc_insertion_point(class_scope:Bool)
+  ))
+_sym_db.RegisterMessage(Bool)
 
 Float = _reflection.GeneratedProtocolMessageType('Float', (_message.Message,), dict(
   DESCRIPTOR = _FLOAT,
@@ -432,8 +471,8 @@ _SERVER = _descriptor.ServiceDescriptor(
   file=DESCRIPTOR,
   index=0,
   options=None,
-  serialized_start=319,
-  serialized_end=659,
+  serialized_start=344,
+  serialized_end=716,
   methods=[
   _descriptor.MethodDescriptor(
     name='voidFunction',
@@ -445,9 +484,18 @@ _SERVER = _descriptor.ServiceDescriptor(
     options=None,
   ),
   _descriptor.MethodDescriptor(
+    name='boolFunction',
+    full_name='Server.boolFunction',
+    index=1,
+    containing_service=None,
+    input_type=_BOOL,
+    output_type=_BOOL,
+    options=None,
+  ),
+  _descriptor.MethodDescriptor(
     name='intArg',
     full_name='Server.intArg',
-    index=1,
+    index=2,
     containing_service=None,
     input_type=_INTEGER,
     output_type=_INTEGER,
@@ -456,7 +504,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='longArg',
     full_name='Server.longArg',
-    index=2,
+    index=3,
     containing_service=None,
     input_type=_LONG,
     output_type=_LONG,
@@ -465,7 +513,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='stringArg',
     full_name='Server.stringArg',
-    index=3,
+    index=4,
     containing_service=None,
     input_type=_STRING,
     output_type=_STRING,
@@ -474,7 +522,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='objectArg',
     full_name='Server.objectArg',
-    index=4,
+    index=5,
     containing_service=None,
     input_type=_OBJECT,
     output_type=_OBJECT,
@@ -483,7 +531,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='stringListArg',
     full_name='Server.stringListArg',
-    index=5,
+    index=6,
     containing_service=None,
     input_type=_STRINGARRAY,
     output_type=_STRINGARRAY,
@@ -492,7 +540,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='intArray',
     full_name='Server.intArray',
-    index=6,
+    index=7,
     containing_service=None,
     input_type=_INTARRAY,
     output_type=_INTARRAY,
@@ -501,7 +549,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='floatArray',
     full_name='Server.floatArray',
-    index=7,
+    index=8,
     containing_service=None,
     input_type=_FLOATARRAY,
     output_type=_FLOATARRAY,
@@ -510,7 +558,7 @@ _SERVER = _descriptor.ServiceDescriptor(
   _descriptor.MethodDescriptor(
     name='euclideanDistance',
     full_name='Server.euclideanDistance',
-    index=8,
+    index=9,
     containing_service=None,
     input_type=_EUCLIDIANVECTORS,
     output_type=_FLOAT,

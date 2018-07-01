@@ -19,6 +19,11 @@ class ServerStub(object):
         request_serializer=server__pb2.void.SerializeToString,
         response_deserializer=server__pb2.void.FromString,
         )
+    self.boolFunction = channel.unary_unary(
+        '/Server/boolFunction',
+        request_serializer=server__pb2.Bool.SerializeToString,
+        response_deserializer=server__pb2.Bool.FromString,
+        )
     self.intArg = channel.unary_unary(
         '/Server/intArg',
         request_serializer=server__pb2.Integer.SerializeToString,
@@ -66,6 +71,13 @@ class ServerServicer(object):
   pass
 
   def voidFunction(self, request, context):
+    # missing associated documentation comment in .proto file
+    pass
+    context.set_code(grpc.StatusCode.UNIMPLEMENTED)
+    context.set_details('Method not implemented!')
+    raise NotImplementedError('Method not implemented!')
+
+  def boolFunction(self, request, context):
     # missing associated documentation comment in .proto file
     pass
     context.set_code(grpc.StatusCode.UNIMPLEMENTED)
@@ -135,6 +147,11 @@ def add_ServerServicer_to_server(servicer, server):
           servicer.voidFunction,
           request_deserializer=server__pb2.void.FromString,
           response_serializer=server__pb2.void.SerializeToString,
+      ),
+      'boolFunction': grpc.unary_unary_rpc_method_handler(
+          servicer.boolFunction,
+          request_deserializer=server__pb2.Bool.FromString,
+          response_serializer=server__pb2.Bool.SerializeToString,
       ),
       'intArg': grpc.unary_unary_rpc_method_handler(
           servicer.intArg,

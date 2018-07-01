@@ -2,6 +2,7 @@ syntax = "proto3";
 
 service Server {
     rpc voidFunction(void) returns (void) {};
+    rpc boolFunction(Bool) returns (Bool) {};
     rpc intArg(Integer) returns (Integer) {};
     rpc longArg(Long) returns (Long) {};
     rpc stringArg(String) returns (String) {};
@@ -14,6 +15,10 @@ service Server {
 
 message void {
 
+}
+
+message Bool {
+    bool boolean = 1;
 }
 
 message Float {
