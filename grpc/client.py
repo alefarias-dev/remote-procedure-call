@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import server_pb2
 import server_pb2_grpc
 import grpc
@@ -21,12 +22,12 @@ def run():
     stub = server_pb2_grpc.ServerStub(channel)
 
     # estruturas de dados auxiliares
-    n_tests = 512
-    stringList = ['abcdef' for i in range(200)]
-    numbers = [32 for i in range(200)]
+    n_tests        = 512
+    stringList     = ['abcdef' for i in range(200)]
+    numbers       = [32 for i in range(200)]
     float_numbers = [2.5 for i in range(200)]
-    array_1 = server_pb2.FloatArray(numbers=[15.63,1.65,0.69])
-    array_2 = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
+    array_1       = server_pb2.FloatArray(numbers=[15.63,1.65,0.69])
+    array_2       = server_pb2.FloatArray(numbers=[15.10,1.25,0.89])
     boolean = True
     string_32 = "a0APw0Di2UpuX8q4Z1ha8QHSvRu7U3UV"
     string_512 = "wGKH8e8QCparhy8coSOiypTFHFHcyqoBDhGcIHfNZU2Va3KFsOHXGDn28sprlXDLAmMl4AGeZGN3cDpTzylNCEHiSiUGUleje" \
@@ -125,26 +126,26 @@ def run():
         e = time.time()
         object_arg_times.append(e-s)
 
-    euclidian_times = []
+    euclidean_times = []
     for i in range(n_tests):
         s = time.time()
-        stub.euclideanDistance(server_pb2.EuclidianVectors(vectors=[array_1, array_2]))  # euclidian distance
+        stub.euclideanDistance(server_pb2.EuclidianVectors(vectors=[array_1, array_2]))  # euclidean distance
         e = time.time()
-        euclidian_times.append(e-s)
+        euclidean_times.append(e-s)
 
     # dataset
     void_times         = np.array(void_times)
+    bool_times         = np.array(bool_times)
     int_arg_times      = np.array(int_arg_times)
     long_arg_times     = np.array(long_arg_times)
     string32_times     = np.array(string32_times)
     string512_times    = np.array(string512_times)
     string1024_times   = np.array(string1024_times)
-    bool_times         = np.array(bool_times)
     int_array_times    = np.array(int_array_times)
     float_array_times  = np.array(float_array_times)
     string_array_times = np.array(string_array_times)
     object_arg_times   = np.array(object_arg_times)
-    euclidian_times    = np.array(euclidian_times)
+    euclidean_times    = np.array(euclidean_times)
 
     df = pd.DataFrame({'void':void_times,
                        'boolean':bool_times,
@@ -157,7 +158,7 @@ def run():
                        'float_array':float_array_times,
                        'string_array':string_array_times,
                        'object_arg':object_arg_times,
-                       'euclidean_arg':euclidian_times})
+                       'euclidean_arg':euclidean_times})
     df.to_csv('grpc_metrics_'+host+'.csv', index=False)
     print('client finished...')
 
