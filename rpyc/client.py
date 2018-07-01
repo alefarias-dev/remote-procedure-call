@@ -23,8 +23,8 @@ def run():
     stringList    = ['abcdef' for i in range(200)]
     numbers       = [32 for i in range(200)]
     float_numbers = [2.5 for i in range(200)]
-    array_1       = [15.63,1.65,0.69]
-    array_2       = [15.10,1.25,0.89]
+    array_1       = (15.63, 1.65, 0.69)
+    array_2       = (15.10, 1.25, 0.89)
     boolean = True
     string_32 = "a0APw0Di2UpuX8q4Z1ha8QHSvRu7U3UV"
     string_512 = "wGKH8e8QCparhy8coSOiypTFHFHcyqoBDhGcIHfNZU2Va3KFsOHXGDn28sprlXDLAmMl4AGeZGN3cDpTzylNCEHiSiUGUleje" \

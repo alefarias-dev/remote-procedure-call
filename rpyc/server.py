@@ -32,9 +32,9 @@ class Server(rpyc.Service):
         return float_list
 
     def exposed_euclideanDistance(self, v, w):
-        v = np.array(v);
-        w = np.array(w);
-        res = np.sqrt(np.sum((v-w))**2)
+        v_temp = np.array(v)
+        w_temp = np.array(w)
+        res = np.sqrt(np.sum((v_temp-w_temp))**2)
         return res
 
 
